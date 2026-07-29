@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 40px auto;
+    height: 900px;
+    width: 300px;
+    background-color: rgb(121, 121, 111);
+}
+.another {
+    background-color: coral;
+    height: 600px;
+    width: 600px;
+}
+
+.box{
+      height: 100px;
+    width: 100px;
+}
+.redcolor {
+    position: relative;
+    left: 0px;
+    top: 50px;
+    z-index: 1;
+    background-color: red;
+}
+.bluecolor {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+   
+    background-color: blue;
+}
+.greencolor {
+    position: absolute;
+     right: 16px;
+    bottom: 16px;
+    z-index: -1;
+    background-color: green;
+}
+.purplecolor{
+    position: sticky;
+    top: 30px;
+    z-index: 2;
+    background-color: purple;
+
+}
+
+.space {
+    height: 200vh;
+}

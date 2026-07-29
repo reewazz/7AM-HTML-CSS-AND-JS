@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            height: 300px;
+            width: 300px;
+            background-color: cadetblue;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            transition-duration: 6s;
+            /* transition-delay: 2s; */
+            /* transition-property: all; */
+            /* transition-timing-function: cubic-bezier(0.2,-0.36, 0, 0.96); */
+            transition: all 2s  linear ;
+
+        }
+          
+         
+
+        .container:hover {
+            transform: rotate(360deg);
+            background-color: purple;
+            border-radius: 50%;
+        }
+
+        h2 {
+            transition: all 2s ease-in-out;
+        }
+        h2:hover {
+            color: white;
+           cursor: pointer;
+           background-color: black;
+           
+           
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+
+    <div>
+        <h2>Some Texts</h2>
+    </div>
+    
+</body>
+</html>

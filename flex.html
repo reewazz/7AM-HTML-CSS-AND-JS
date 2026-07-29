@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        border: 2px solid red;
+        height: 300px;
+        padding: 20px 80px;
+        display: flex;
+        /* justify-content: center; */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+        /* justify-content: center;   */
+        /* justify-content: flex-start; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        align-items: center;
+  gap: 20px;
+        /* justify-content: space-evenly; */
+        /* align-items: center; */
+        /* align-items: center; */
+        /* flex-wrap: wrap; */
+
+    }
+
+    .box{
+        width: 100px;
+        border: 1px solid green;
+    }
+
+    .abc{
+        border: 2px solid green;
+
+    }
+    #pond{
+        display: flex;
+        justify-content: center;
+    }
+/* 0,1,2,3,4,5,6,7,8 */
+    #box1{
+        order: 2;
+        flex-grow:1
+    }
+
+    #box3{
+        order: 1;
+        flex-grow:4;
+        flex-shrink:5
+
+    }
+
+    #box5{
+        flex-basis: 200px;
+    }
+
+    #box7 {
+        flex-shrink: 2;
+    }
+
+    #box6{
+        flex-shrink: 3;
+    }
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      color: white;
+      height: 60px;
+      padding: 0px 80px;
+    }
+    .nav-items{
+        display: flex;
+       gap: 48px;
+    }
+
+    button{
+        padding: 8px 24px;
+        border-radius: 8px;
+    }
+   
+   </style>
+</head>
+<body>
+
+    <nav>
+        <h1>Logo</h1>
+        <div class="nav-items">
+            <div>Home</div>
+            <div>Products</div>
+            <div>Services</div>
+        </div>
+        <div class="nav-items">
+            <button>login</button>
+            <button>signup</button>
+        </div>
+    </nav>
+
+    <div class="container">
+     <div class="box" id="box1">box1</div>
+     <div class="box" id="box2">box2</div>
+     <div class="box" id="box3">box3</div>
+     <div class="box" id="box4">box4</div>
+     <div class="box" id="box5">box5</div>
+     <div class="box" id="box6">box6</div>
+     <div class="box" id="box7">box7</div>
+     <div class="box" id="box8">box8</div>
+      
+    </div>
+
+
+   
+    
+</body>
+</html>

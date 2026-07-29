@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+gap: 100px;
+    align-items: center;
+    height: 100vh;
+    padding: 0 200px;
+    background-color: rgb(228, 228, 228);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 25vw;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #EDEDED;
+    padding: 16px;
+}
+
+button{
+   padding: 10px;
+}
+ .form {
+    padding: 16px;
+}

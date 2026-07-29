@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.481);
+    /* background-image: url(./cuppp.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   background-blend-mode: multiply;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkJtWIYeRppfBZSVywZoYY1QYgs69D5OtSMxiWswN0UAsGVmq_k7N1bIs&s=10);
+    /* background-image: url(https://wallpaperaccess.com/full/1857434.jpg); */
+/* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7QpIf5taDrr8owZ2yGb1mKQEHJOD0wWPDmMPwPyBAuQ&s=10); */
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 25vw;
+    text-align: center;
+    /* box-shadow: 1px 1px 1px 1px #EDEDED; */
+    padding: 16px;
+    border: 0.1px double white;
+    /* filter: blur(2px); */
+    backdrop-filter: blur(4px);
+    border-radius: 16px;
+}
+
+button{
+   padding: 10px;
+    background: transparent;
+    /* color: white; */
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: white;
+
+
+
+}
+ .form input {
+    padding: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom:2px solid white;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+
+
+}

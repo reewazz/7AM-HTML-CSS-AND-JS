@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+
+    <style>
+.link:hover {
+    color: #ff0000;
+   
+} 
+
+.link:visited {
+color: green;
+}
+
+link:active {
+    background-color: black;
+    color: white;
+}
+
+
+input:focus {
+        border: none;
+    outline: none;
+    border: 2px solid red;
+}
+
+input::placeholder {
+    color: red;
+}
+
+ul li:first-child {
+    background-color: red;
+    color: white;
+}
+ul li:last-child {
+    background-color: red;
+    color: white;
+}
+
+ul li:nth-child(2n+1) {
+    background-color: gray;
+    color: white;
+}
+ul li:nth-child(2n) {
+    background-color: rgb(55, 52, 52);
+    color: white;
+} 
+
+h1::before {
+    content: 'before content';
+}
+h1::after {
+    content: 'after content';
+}
+        
+
+label::after {
+    content: '*';
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <h1>These are pseudo classes examples</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nihil assumenda odit exercitationem numquam ipsam quaerat. Harum odio aut error ad officia veritatis nobis ipsam odit sequi, eos autem dolorum!</p>
+    <a class="link" href="https://www.w3schools.com/css/css_pseudo_classes.asp">Visit w3</a>
+    <a class="link" href="https://www.google.com">Visit google</a>
+    <a class="link" href="https://www.google.com">some link</a>
+    <label for="">Full Name</label>
+    <input type="text" placeholder="enter your name">
+
+    <ul>
+    
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
+        <li>list item 6</li>
+        <li>list item 7</li>
+        <li>list item 8</li>
+    </ul>
+
+    <ul>
+          <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
+        <li>list item 6</li>
+        <li>list item 7</li>
+        <li>list item 8</li>
+    </ul>
+</body>
+</html>
